@@ -1,4 +1,4 @@
-<%@page import="model.bean.Student"%>
+<%@page import="model.bean.Vaccine"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -11,8 +11,10 @@
 <body>
 	<table>
 	<%
-		ArrayList<Student> studentArray = (ArrayList<Student>)request.getAttribute("studentArray");
-		for (int i = 0; i < studentArray.size(); i++){
+	p
+
+			ArrayList<Vaccine> studentArray = (ArrayList<Vaccine>)request.getAttribute("studentArray");
+			for (int i = 0; i < studentArray.size(); i++){
 	%>
 			<tr>
 				<td><%= studentArray.get(i).getId() %></td>

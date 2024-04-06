@@ -15,7 +15,9 @@ public class QLSV_DAO {
     public QLSV_DAO() throws SQLException, ClassNotFoundException {
     	Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/DULIEU";
-        this.connection = DriverManager.getConnection(url);
+        String username = "root";
+        String password = "";
+        this.connection = DriverManager.getConnection(url, username, password);
     }
 
     public ArrayList<Student> getStudentList() throws SQLException {
